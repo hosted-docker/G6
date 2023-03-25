@@ -29,10 +29,12 @@ const getExtraLib = () => {
 };
 
 export default defineConfig({
+  publicPath: "/ant-g6/",
+  basePath: "/ant-g6",
   locales: [{ id: 'zh', name: '中文' }, { id: 'en', name: 'English' }],
   title: 'G6',                                                          // 网站header标题
   favicons: ['https://mdn.alipayobjects.com/huamei_qa8qxu/afts/img/A*7svFR6wkPMoAAAAAAAAAAAAADmJ7AQ/original'], // 网站 favicon
-  metas: [                                                              // 自定义 meta 标签  
+  metas: [                                                              // 自定义 meta 标签
     { name: 'keywords', content: 'G6' },
     { name: 'description', content: 'A collection of charts made with the Grammar of Graphics' },
   ],
