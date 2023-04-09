@@ -181,3 +181,8 @@ DEBUG_MODE=1 npm test -- --watch ./tests/unit/algorithm/find-path-spec
 ## License
 
 [MIT license](./LICENSE).
+
+忽略nodejs问题
+```
+ export  NODE_OPTIONS=--openssl-legacy-provider
+```

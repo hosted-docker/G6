@@ -29,8 +29,8 @@ const getExtraLib = () => {
 };
 
 export default defineConfig({
-  publicPath: "/ant-g6/",
-  base: "/ant-g6",
+  publicPath: "/mirror/ant-g6/",
+  base: "/mirror/ant-g6",
   locales: [{ id: 'zh', name: '中文' }, { id: 'en', name: 'English' }],
   title: 'G6',                                                          // 网站header标题
   favicons: ['https://mdn.alipayobjects.com/huamei_qa8qxu/afts/img/A*7svFR6wkPMoAAAAAAAAAAAAADmJ7AQ/original'], // 网站 favicon
