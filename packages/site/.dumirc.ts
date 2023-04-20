@@ -28,9 +28,11 @@ const getExtraLib = () => {
   return '';
 };
 
+const contextPath = '/mirror/ant-g6';
+
 export default defineConfig({
-  publicPath: "/mirror/ant-g6/",
-  base: "/mirror/ant-g6",
+  publicPath: contextPath + "/",
+  base: contextPath,
   locales: [{ id: 'zh', name: '中文' }, { id: 'en', name: 'English' }],
   title: 'G6',                                                          // 网站header标题
   favicons: ['https://mdn.alipayobjects.com/huamei_qa8qxu/afts/img/A*7svFR6wkPMoAAAAAAAAAAAAADmJ7AQ/original'], // 网站 favicon
@@ -433,14 +435,14 @@ export default defineConfig({
             zh: '图表示例',
             en: 'Examples',
           },
-          link: `/examples`,
+          link: contextPath + `/examples`,
         },
         {
           text: {
             zh: '开始使用',
             en: 'Getting Started',
           },
-          link: `/manual/introduction`,
+          link: contextPath + `/manual/introduction`,
           type: 'primary',
         },
       ],
@@ -534,7 +536,7 @@ export default defineConfig({
           zh: '基于 G6 实现的动态决策树，辅助用户寻找合适的可视化方式。它展示了 G6 强大的自定义节点和动画的能力。',
           en: 'It is an interactive graph for users to find out an appropriate visualization method for their requirements. The demo shows the powerful custom node and animation ability of G6.'
         },
-        link: `/examples/case/graphDemos/#decisionBubbles`,
+        link: contextPath + `/examples/case/graphDemos/#decisionBubbles`,
         image:
           'https://gw.alipayobjects.com/mdn/rms_f8c6a0/afts/img/A*10b6R5fkyJ4AAAAAAAAAAABkARQnAQ',
       },
@@ -548,7 +550,7 @@ export default defineConfig({
           zh: '社交网络分析是图可视化中一个重要的应用场景。随着社交网络越来越流行，人与人、人与组织之间的关系变得越来越复杂，使用传统的分析手段，已经很难满足我们的分析需求。在这种情况下，图分析及图可视化显得愈发重要。',
           en: 'Social network is an important scenario in graph visualization. The relationships become complicate with the development of social network. Graph visualization and analysis do well on these complex cases.'
         },
-        link: `/manual/cases/relations`,
+        link: contextPath + `/manual/cases/relations`,
         image:
           'https://gw.alipayobjects.com/mdn/rms_f8c6a0/afts/img/A*RYFQSZYewokAAAAAAAAAAABkARQnAQ',
       },
@@ -562,7 +564,7 @@ export default defineConfig({
           zh: '基于 G6 的关系时序分析应用，解决应急过程中流程、影响面、应急预案等一系列应急决策辅助信息和手段，快速止血以减少和避免故障升级。',
           en: 'This is an application for dynamic relationships analysis based on G6, which helps people deal with the flow, influence, and find out solutions to avoid losses and faults.'
         },
-        link: `/manual/cases/sequenceTime`,
+        link: contextPath + `/manual/cases/sequenceTime`,
         image:
           'https://gw.alipayobjects.com/mdn/rms_f8c6a0/afts/img/A*m41kSpg17ZkAAAAAAAAAAABkARQnAQ',
       },
