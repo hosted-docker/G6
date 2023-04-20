@@ -588,7 +588,7 @@ export default defineConfig({
   },
   mfsu: false,
   alias: {
-    '@': __dirname
+    '@': path.resolve(__dirname, ''),
   },
   links: [
   ],
